@@ -58,9 +58,18 @@ body{
      height: 44px;
      padding: 10px 24px;
 }
+@keyframes slidebg {
+    to {
+      background-position: 5em;
+    }
+  }
+.button:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    animation:slidebg 5s linear infinite;
+}
 .half-width img{
     width: 556.01px;
     height: 438px;
-    padding-right: 102px;
+    padding-left: 30px;
     padding-bottom: 86px;
 }
