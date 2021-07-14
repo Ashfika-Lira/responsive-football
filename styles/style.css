@@ -13,7 +13,7 @@ body{
 .menu{
     display: flex;
     justify-content: space-between;
-    padding-left: 156px;
+    padding-left: 150px;
     padding-right: 124px;
     font-size: 16px;
     padding-top: 42px;
@@ -32,6 +32,9 @@ body{
      height: 44px;
      padding: 10px 24px;
 }
+.fa-sign-in-alt {
+    padding-right: 8px;
+}
 /*-------------------
     top part styles 
   --------------------*/
@@ -39,8 +42,8 @@ body{
     display: flex;
     margin-bottom: 70px;
     padding-top: 49px;
-    padding-left: 156px;
-    padding-right: 141px;
+    padding-left: 150px;
+    padding-right: 135px;
 }
 .half-width{
     width: 50%;
@@ -69,33 +72,49 @@ body{
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
     animation:slidebg 5s linear infinite;
 }
+.fa-arrow-right{
+     padding-left: 8px;
+}
 .half-width img{
     width: 556.01px;
     height: 438px;
-    padding-left: 30px;
+    padding-left: 40px;
     padding-bottom: 86px;
 }
 /*------------------------
       middle part styles
  ------------------------- */
  .top-players{
-     padding-left: 180px;
-     padding-right: 210px;
+     padding-left: 100px;
+     padding-right: 110px;
+     padding-bottom: 180px;
  }
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap:27px;
+    grid-column-gap:30px;
 }
 .player{
-    width: 330px;
+    width: 325px;
     height: 474px;
-    padding: 15px;
-    margin-right: 30px;
-    border:10px solid white;
-    box-shadow:0 0 10px grey;
+    border:5px solid white;
+    box-shadow:0 0 5px grey;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 .player img{
-    width: 300px;
+    width: 324px;
     height: 256px;
+}
+.player-name{
+    color: #18191F;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-info{
+    color: #6C6C6C;
+    font-size: 16px;
 }
