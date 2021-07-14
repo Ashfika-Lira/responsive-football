@@ -32,7 +32,9 @@ body{
      height: 44px;
      padding: 10px 24px;
 }
-/* top part styles */
+/*-------------------
+    top part styles 
+  --------------------*/
 .container{
     display: flex;
     margin-bottom: 70px;
@@ -72,4 +74,28 @@ body{
     height: 438px;
     padding-left: 30px;
     padding-bottom: 86px;
+}
+/*------------------------
+      middle part styles
+ ------------------------- */
+ .top-players{
+     padding-left: 180px;
+     padding-right: 210px;
+ }
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:27px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    margin-right: 30px;
+    border:10px solid white;
+    box-shadow:0 0 10px grey;
+}
+.player img{
+    width: 300px;
+    height: 256px;
 }
