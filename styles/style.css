@@ -87,7 +87,7 @@ body{
  .top-players{
      padding-left: 100px;
      padding-right: 110px;
-     padding-bottom: 180px;
+     padding-bottom: 100px;
  }
 .players{
     display: grid;
@@ -118,3 +118,57 @@ body{
     color: #6C6C6C;
     font-size: 16px;
 }
+/*-----------------------
+    footer styles
+ ---------------------- */
+ .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 475px; 
+    padding-right: 480px;
+ }
+ .footer-img img{
+    width: 483.87px;
+    height: 110px;
+ }
+ .footer-icons{
+     padding-left: 155px;
+     padding-right: 155px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+ .footer-icons a{
+     background-color: lightgray;
+     border-radius: 10%;
+     height: 50px;
+     width: 50px;
+     margin-right: 14px;
+ }
+ .fa-instagram{
+     width: 16px;
+     height: 13px;
+     color: #969BAB;
+ }
+ .fa-basketball-ball{
+    width: 16px;
+    height: 13px;
+    color: #969BAB;
+ }
+ .fa-twitter{
+    width: 16px;
+    height: 13px;
+    color: #969BAB;
+ }
+ .fa-youtube{
+    width: 16px;
+    height: 13px;
+    color: #969BAB;
+ }
+ .copyright{
+     padding-left: 124px;
+     padding-right: 124px;
+ }
