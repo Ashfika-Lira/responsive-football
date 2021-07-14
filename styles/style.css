@@ -172,3 +172,64 @@ body{
      padding-left: 124px;
      padding-right: 124px;
  }
+/*--------------------
+ match summary styles
+ ------------------ */
+ .match{
+     text-align: center;
+     background-color: blueviolet;
+ }
+ .schedule{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:24px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+ }
+ .schedule img{
+    width: 300px;
+    height: 200px;
+ }
+ /* partner styles */
+ hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+ .partners{
+     text-align: center;
+     color: cadetblue;
+ }
+ .logo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:30px;
+    padding-right: 200px;
+    padding-left: 250px;
+ }
+ .logo img{
+     width: 100px;
+     height: 100px;
+ }
+/* ---------------------
+   Media Queries
+   -------------------- */
+
+   /* Mobile Devices */
+   @media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+     }
+       .half-width,.players,.footer-info{
+            grid-template-columns: repeat(1,1fr);
+            flex-direction: column;
+        }
+
+        /* tablet devices */
+        @media only screen and (min-width:689px) and (max-width:992px) {
+            .container{
+                width: 100%;
+            }
+            .half-width,.players,.footer-info{
+                grid-template-columns: repeat(2,1fr);
+                flex-direction: column;
