@@ -217,19 +217,26 @@ body{
 
    /* Mobile Devices */
    @media only screen and (max-width:688px) {
-    .container{
+    .main{
         width: 100%;
-     }
+    }
        .half-width,.players,.footer-info{
-            grid-template-columns: repeat(1,1fr);
-            flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
         }
-
+        .menu,.summary,.our-partners{
+            display: none;
+}
+   }
         /* tablet devices */
         @media only screen and (min-width:689px) and (max-width:992px) {
-            .container{
+            .main{
                 width: 100%;
             }
             .half-width,.players,.footer-info{
                 grid-template-columns: repeat(2,1fr);
-                flex-direction: column;
+            }
+                .menu,.summary,.our-partners{
+                    display: none;
+                }
+            }
