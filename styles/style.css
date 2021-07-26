@@ -9,7 +9,9 @@ body{
 .background-image{
     background-color:  #2D25A0;
 }
-/* menu styles */
+/*----------------------
+     menu styles
+   -------------------- */
 .menu{
     display: flex;
     justify-content: space-between;
@@ -118,6 +120,47 @@ body{
     color: #6C6C6C;
     font-size: 16px;
 }
+/*--------------------
+ match summary styles
+ ------------------ */
+ .match{
+    text-align: center;
+    background-color: blueviolet;
+}
+.schedule{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-column-gap:24px;
+   padding-right: 100px;
+   padding-left: 100px;
+   margin-bottom: 50px;
+}
+.schedule img{
+   width: 300px;
+   height: 200px;
+}
+/*-----------------
+   partner styles 
+ ------------------*/
+hr{
+   border: 1px solid #D1D1D1;
+   margin-bottom: 27px;
+}
+.partners{
+    text-align: center;
+    color: cadetblue;
+}
+.logo{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-row-gap:30px;
+   padding-right: 200px;
+   padding-left: 250px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
 /*-----------------------
     footer styles
  ---------------------- */
@@ -172,45 +215,8 @@ body{
      padding-left: 124px;
      padding-right: 124px;
  }
-/*--------------------
- match summary styles
- ------------------ */
- .match{
-     text-align: center;
-     background-color: blueviolet;
- }
- .schedule{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap:24px;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin-bottom: 50px;
- }
- .schedule img{
-    width: 300px;
-    height: 200px;
- }
- /* partner styles */
- hr{
-    border: 1px solid #D1D1D1;
-    margin-bottom: 27px;
-}
- .partners{
-     text-align: center;
-     color: cadetblue;
- }
- .logo{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-row-gap:30px;
-    padding-right: 200px;
-    padding-left: 250px;
- }
- .logo img{
-     width: 100px;
-     height: 100px;
- }
+
+
 /* ---------------------
    Media Queries
    -------------------- */
@@ -220,23 +226,201 @@ body{
     .main{
         width: 100%;
     }
-       .half-width,.players,.footer-info{
-        grid-template-columns: repeat(1,1fr);
-        flex-direction: column;
+       .menu{
+           width: 395px;
+           padding-left: 10px;
+           padding-right: 10px;
+           padding-top: 10px;
+           background-color: #2D25A0;
+       }
+       .menu-left{
+           width: 100px;
+           height: 200px; 
+       }
+       .menu-right a{
+        height: 30px;
+        width: 40px;
+        padding: 5px ;
+       }
+       .container {
+           flex-direction: column;
+           width: 100%;
+           padding-left: 20px;
+           padding-right: 20px;
         }
-        .menu,.summary,.our-partners{
-            display: none;
-}
-   }
+        .section-title{
+            font-size: 40px;
+            height: 250px;
+            width: 150px;
+        }
+        .button{
+            height: 34px;
+            width: 60px;
+            padding: 10px ;
+        }
+        .half-width img{
+            padding-left: 10px;
+            height: 300px;
+            width: 300px;
+            margin-top: 50px;
+        }
+        .top-players{
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 340px;
+        }
+        .players{
+            grid-template-columns: repeat(1,1fr);
+            align-items: center;
+        }
+        .player{
+            width: 300px;
+            height: 430px;
+        }
+        .player img{
+            width: 300px;
+            height: 200px;
+        }
+        .player-name{
+            width: 300px;
+            height: 30px;
+        }
+        .player-info{
+            width: 300px;
+            height: 30px;
+        }
+        .summary{
+            width: 340px;
+        }
+        .schedule{
+            padding:0 10px;
+            grid-template-columns: repeat(1,1fr);
+            grid-row-gap:20px ;
+        }
+        .our-partners{
+              width: 340px;
+            }
+        .logo{
+            padding-left: 10px;
+            padding-right: 10px;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .logo img{
+            justify-content: space-between;
+        }
+        .footer-container{
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 340px;
+        }
+        .footer-info{
+             grid-template-columns: repeat(1,1fr);
+            flex-direction: column;
+        }
+        .footer-img img{
+            width: 300px;
+        }
+        .footer-icons{
+            padding-left: 50px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .copyright{
+             padding-left: 30px;
+             padding-right: 10px;
+        }
+    }
         /* tablet devices */
         @media only screen and (min-width:689px) and (max-width:992px) {
             .main{
                 width: 100%;
             }
-            .half-width,.players,.footer-info{
+            .menu{
+                width: 760px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                background-color: #2D25A0;
+            }
+            .menu-left{
+                width: 100px;
+                height: 200px; 
+            }
+            .menu-right a{
+             height: 30px;
+             width: 40px;
+             padding: 5px ;
+            }
+            .container{
+                width: 760px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .section-title{
+                font-size: 50px;
+                height: 250px;
+                width: 180px;
+            }
+            .button{
+                height: 34px;
+                width: 60px;
+                padding: 10px ;
+            }
+            .half-width img{
+                padding-left: 10px;
+                height: 350px;
+                width: 350px;
+                margin-top: 50px;
+            }
+            .top-players{
+                padding: 0 20px;
+                padding-bottom: 50px;
+                width: 760px;
+            }
+            .players{
                 grid-template-columns: repeat(2,1fr);
             }
-                .menu,.summary,.our-partners{
-                    display: none;
-                }
+            .summary{
+                width: 760px;
             }
+            .schedule{
+                padding:0 20px;
+                grid-template-columns: repeat(2,1fr);
+                grid-row-gap:20px ;
+            }
+            .our-partners{
+                  width: 760px;
+                }
+            .logo{
+                padding-left: 20px;
+                padding-right: 20px;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .logo img{
+                justify-content: space-between;
+            }
+            .footer-container{
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 760px;
+            }
+            .footer-info{
+                 grid-template-columns: repeat(1,1fr);
+                flex-direction: column;
+            }
+            .footer-img img{
+                width: 400px;
+                padding-left: 10px;
+            }
+            .footer-icons{
+                padding-left: 120px;
+                padding-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .copyright{
+                padding-left: 80px;
+                padding-right: 20px;
+            } 
+        }
